@@ -1,0 +1,5 @@
+{
+ // hello
+ /* block comment stays outside the property outline */
+ "name": "hello",
+}

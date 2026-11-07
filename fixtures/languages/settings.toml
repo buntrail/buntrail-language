@@ -1,0 +1,10 @@
+title = "hello"
+[server]
+name = "hello"
+network.port = 8080
+message = """hello
+world"""
+[[server.hosts]]
+name = "hello"
+[[server.hosts]]
+name = "second"

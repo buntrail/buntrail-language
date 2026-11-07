@@ -1,0 +1,10 @@
+/* hello */
+$color: red;
+@mixin hello($value) {
+ color: $value;
+}
+.hello {
+ @include hello($color);
+ .child { color: $color; }
+ .#{suffix} { display: block; }
+}

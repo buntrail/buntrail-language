@@ -1,0 +1,65 @@
+--- a/grammar.js
++++ b/grammar.js
+@@ -327,6 +327,7 @@
+ var nodes = new NodeMap(CONDITIONAL_SPECS);
+ var grammar_default = grammar(import_grammar.default, {
+   name: "blade",
++  externals: ($, original) => [...original, $.verbatim_content],
+   rules: {
+     // The entire grammar
+     _node: ($) => choice(
+@@ -598,11 +599,7 @@
+     ),
+     verbatim: ($) => seq(
+       alias("@verbatim", $.directive_start),
+-      optional(
+-        repeat1(
+-          choice(...nodes.without($.doctype, $.livewire, $.envoy))
+-        )
+-      ),
++      optional($.verbatim_content),
+       alias("@endverbatim", $.directive_end)
+     ),
+     stack: ($) => choice(
+@@ -737,8 +734,7 @@
+       ...nodes.getConditionalsUsing(
+         $,
+         $._conditional_body
+-      ),
+-      $._custom
++      )
+     ),
+     // used in the conditional body rules
+     conditional_keyword: ($) => choice(
+--- a/src/scanner.c
++++ b/src/scanner.c
+@@ -18,6 +18,7 @@
+     IMPLICIT_END_TAG,
+     RAW_TEXT,
+     COMMENT,
++    VERBATIM_CONTENT,
+ };
+ 
+ typedef struct {
+@@ -292,6 +293,21 @@
+ }
+ 
+ static bool scan(Scanner *scanner, TSLexer *lexer, const bool *valid_symbols) {
++    if (valid_symbols[VERBATIM_CONTENT]) {
++        bool content = false;
++        while (!lexer->eof(lexer)) {
++            lexer->mark_end(lexer);
++            if (lexer->lookahead == '@') {
++                const char *end = "@endverbatim";
++                while (*end && lexer->lookahead == *end) { advance(lexer); end++; }
++                if (!*end) { lexer->result_symbol = VERBATIM_CONTENT; return content; }
++            } else { advance(lexer); }
++            content = true;
++        }
++        lexer->mark_end(lexer);
++        lexer->result_symbol = VERBATIM_CONTENT;
++        return content;
++    }
+     if (valid_symbols[RAW_TEXT] && !valid_symbols[START_TAG_NAME] && !valid_symbols[END_TAG_NAME]) {
+         return scan_raw_text(scanner, lexer);
+     }

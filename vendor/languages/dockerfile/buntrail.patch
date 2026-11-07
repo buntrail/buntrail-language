@@ -1,0 +1,12 @@
+--- a/src/scanner.c
++++ b/src/scanner.c
+@@ -299,6 +299,9 @@
+     // necessary to avoid a conflict in the grammar since a normal line break
+     // could either be the start of a heredoc or the end of an instruction.
+     if (valid_symbols[HEREDOC_NL]) {
++        if (state->heredoc_count > 0 && lexer->lookahead == '\r') {
++            lexer->advance(lexer, false);
++        }
+         if (state->heredoc_count > 0 && lexer->lookahead == '\n') {
+             lexer->result_symbol = HEREDOC_NL;
+             lexer->advance(lexer, false);

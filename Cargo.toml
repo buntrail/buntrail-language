@@ -1,0 +1,47 @@
+[package]
+name = "buntrail-language"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99.1"
+description = "Language analysis using Tree-sitter."
+license = "MIT"
+repository = "https://github.com/buntrail/buntrail-language"
+homepage = "https://github.com/buntrail"
+documentation = "https://docs.rs/buntrail-language"
+readme = "README.md"
+authors = ["Bunga Mungil <bungamungil@icloud.com>"]
+
+[dependencies]
+serde_json = "=1.0.154"
+buntrail-core = "0.1.0"
+tree-sitter = "=0.27.1"
+tree-sitter-html = "=0.23.2"
+tree-sitter-javascript = "=0.25.0"
+streaming-iterator = "=0.1.9"
+
+tree-sitter-typescript = "=0.23.2"
+tree-sitter-php = "=0.25.1"
+tree-sitter-java = "=0.23.5"
+tree-sitter-swift = "=0.7.4"
+tree-sitter-c = "=0.24.2"
+tree-sitter-cpp = "=0.23.4"
+tree-sitter-go = "=0.25.0"
+tree-sitter-dart = "=0.3.0"
+tree-sitter-xml = "=0.7.0"
+tree-sitter-md = "=0.5.4"
+tree-sitter-yaml = "=0.7.2"
+tree-sitter-json = "=0.24.8"
+tree-sitter-toml-ng = "=0.7.0"
+tree-sitter-css = "=0.25.0"
+tree-sitter-bash = "=0.25.1"
+tree-sitter-language = "=0.1.9"
+
+[features]
+source-candidates = []
+
+[build-dependencies]
+cc = "=1.10.0"
+
+[[test]]
+name = "source_candidates"
+required-features = ["source-candidates"]

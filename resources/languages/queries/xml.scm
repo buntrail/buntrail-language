@@ -1,0 +1,24 @@
+; Buntrail query revision 1. Deliberately predicate-free, exact grammar nodes.
+(StringType) @string
+"ANY" @keyword
+"ATTLIST" @keyword
+"CDATA" @keyword
+(CData) @string
+(Comment) @comment
+"DOCTYPE" @keyword
+"ELEMENT" @keyword
+"EMPTY" @keyword
+"ENTITY" @keyword
+"NDATA" @keyword
+"NOTATION" @keyword
+(Name) @tag
+"PUBLIC" @keyword
+"SYSTEM" @keyword
+"encoding" @keyword
+"no" @keyword
+"standalone" @keyword
+"version" @keyword
+"xml" @keyword
+"xml-model" @keyword
+"xml-stylesheet" @keyword
+"yes" @keyword

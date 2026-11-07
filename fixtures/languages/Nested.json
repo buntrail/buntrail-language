@@ -1,0 +1,8 @@
+{
+ "services": [{}, {"env": {"MODE": "hello"}}],
+ "empty": [],
+ "unicode": "😀é日本",
+ "duplicate": 1,
+ "duplicate": 2,
+ "escaped\"key": "long scalar xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}

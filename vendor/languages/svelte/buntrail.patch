@@ -1,0 +1,20 @@
+--- a/grammar.js
++++ b/grammar.js
+@@ -119,6 +119,7 @@
+           )),
+         ),
+         alias($.expression, $.attribute_name),
++        $.attach_tag,
+       ),
+     ),
+ 
+@@ -288,6 +289,9 @@
+       $._tag_value,
+       '}',
+     ),
++
++    _attach_tag: _ => tag('@', 'attach'),
++    attach_tag: $ => seq('{', alias($._attach_tag, $.expression_tag), $._tag_value, '}'),
+ 
+     _render_tag: _ => tag('@', 'render'),
+     render_tag: $ => seq(

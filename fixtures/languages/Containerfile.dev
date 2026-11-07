@@ -1,0 +1,11 @@
+# syntax=docker/dockerfile:1
+ARG BASE=alpine
+fRoM --platform=$BUILDPLATFORM $BASE as build
+rUn echo hello \
+ && true
+rUn <<'SHELL'
+echo hello
+SHELL
+fRoM alpine as runtime
+copy --from=build /tmp /tmp
+Cmd ["echo", "hello"]

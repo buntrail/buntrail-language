@@ -1,0 +1,27 @@
+; Buntrail query revision 1. Deliberately predicate-free, exact grammar nodes.
+(attribute_name) @identifier
+(class_selector) @selector
+(float_value) @number
+(id_selector) @selector
+(integer_value) @number
+(keyframe_block) @identifier
+(keyframe_block_list) @identifier
+(keyframes_statement) @identifier
+(selectors) @selector
+(string_value) @string
+"and" @keyword
+(at_keyword) @identifier
+(comment) @comment
+(identifier) @identifier
+(js_comment) @comment
+(keyframes_name) @identifier
+(keyword_query) @identifier
+"not" @keyword
+"of" @keyword
+"only" @keyword
+"or" @keyword
+(property_name) @identifier
+"selector" @keyword
+(string_content) @string
+(tag_name) @tag
+"to" @keyword

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<root xmlns:x="urn:hello">
+ <!-- hello -->
+ <x:child><![CDATA[hello <world>]]></x:child>
+</root>

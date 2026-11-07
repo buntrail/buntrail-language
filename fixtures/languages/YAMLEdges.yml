@@ -1,0 +1,20 @@
+---
+hello: &value hello
+日本: *value
+hello: duplicate
+? [complex, key]
+: value
+empty:
+text: |
+  hello
+  lines
+folded: >
+  hello
+  next
+---
+- name: hello
+  values: [a, b]
+---
+broken:
+   good: true
+  bad: false

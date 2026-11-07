@@ -1,0 +1,59 @@
+# file|association|selected highlighted source token|source-authored outline labels|required injection languages
+# Mandatory Vue/Blade chains, child order, source selections/enclosures and region delimiters: component-expectations.json (shared with native tests).
+.claude/CLAUDE.md|markdown|Instructions|Instructions,Details,Setext section|yaml,tsx,shell,markdown-inline
+.dockerignore|ignore|!hello.txt||
+.env|dotenv|MODE||
+.env.local|dotenv|MODE||
+.gitignore|ignore|!hello.txt||
+AGENTS.md|markdown|Instructions|Instructions,Details,Setext section|yaml,tsx,shell,markdown-inline
+BladeEscapes.blade.php|blade|@verbatim|p,b|
+CLAUDE.md|markdown|Instructions|Instructions,Details,Setext section|yaml,tsx,shell,markdown-inline
+Containerfile|dockerfile|ARG|build,runtime|shell,json
+Containerfile.dev|dockerfile|ARG|build,runtime|shell,json
+Dockerfile|dockerfile|ARG|build,runtime|shell,json
+Dockerfile.escape|dockerfile|FROM|hello|shell
+Dockerfile.multistage|dockerfile|ARG|build,runtime|shell,json
+Example.java|java|class|Example,greet|
+Example.swift|swift|struct|Example,greet,label|
+Module.cjs|javascript|function|greet,Greeter|
+Module.js|javascript|function|greet,Greeter|
+Module.mjs|javascript|function|greet,Greeter|
+Nested.json|json|services|services,[1],env,MODE|
+Page.php|php|class|Example,greet,label|html
+Panel.jsx|jsx|function|Panel,section|
+Panel.tsx|tsx|interface|Props,Panel|
+Profile.blade.php|blade|@section|content,x-card,x-slot:title,greet|php-only,javascript,css
+SKILL.md|markdown|Skill|Skill,Repeat|javascript,markdown-inline
+Settings.jsonc|jsonc|name|name|
+SvelteCurrentSyntax.svelte|svelte|script|tooltip,failed,svelte:boundary|typescript
+SvelteModern.svelte|svelte|script|row,bump|javascript,typescript,css
+Types.cts|typescript|interface|User,greet,Greeter|
+Types.mts|typescript|interface|User,greet,Greeter|
+Types.ts|typescript|interface|User,greet,Greeter|
+VueFallback.vue|vue|template|script (TypeScript) external,style (SCSS) external|
+VueMixed.vue|vue|template|template,ul,li,label|typescript,javascript,scss,css
+YAMLEdges.yml|yaml|hello|hello,日本,[complex key],empty|
+commands.bash|shell|for|hello|
+commands.sh|shell|for|hello|
+commands.zsh|shell|for|hello|
+compose.yaml|yaml|MODE|services,app,environment,MODE|
+document.xml|xml|root|root,x:child|
+example-c.h|c|struct|Example,greet|
+example-cpp.h|cpp|namespace|sample,Example,greet,label|
+example.c|c|struct|Example,greet|
+example.c++|cpp|namespace|sample,Example,greet,label|
+example.cc|cpp|namespace|sample,Example,greet,label|
+example.cpp|cpp|namespace|sample,Example,greet,label|
+example.cxx|cpp|namespace|sample,Example,greet,label|
+example.dart|dart|class|Example,greet,label|
+example.go|go|func|Example,Greet,Label|
+example.hh|cpp|namespace|sample,Example,greet,label|
+example.hpp|cpp|namespace|sample,Example,greet,label|
+example.hxx|cpp|namespace|sample,Example,greet,label|
+example.inl|cpp|namespace|sample,Example,greet,label|
+example.ipp|cpp|namespace|sample,Example,greet,label|
+page.html|html|article|article,greet|javascript,css
+settings.toml|toml|server|server,name|
+styles-parent.scss|scss|color|.root,.#{$suffix},&-#{$suffix}|
+styles.css|css|color|article.hello|
+styles.scss|scss|color|.hello,.child|

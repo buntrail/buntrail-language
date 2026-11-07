@@ -1,0 +1,39 @@
+[
+  {
+    "file": "VueMixed.vue", "grammar": "vue",
+    "roots": ["template", "script setup (TypeScript)", "script (JavaScript)", "style (SCSS)", "style (CSS)"],
+    "nodes": [
+      {"path":["template"], "open":"<template>", "close":"</template>", "selection":"template", "children":["ul"]},
+      {"path":["template","ul"], "open":"<ul>", "close":"</ul>", "selection":"ul", "children":["li"]},
+      {"path":["template","ul","li"], "open":"<li v-for=", "close":"</li>", "selection":"li", "children":[], "foldAncestor":["template"]},
+      {"path":["script setup (TypeScript)"], "open":"<script setup lang=\"ts\">", "close":"</script>", "selection":"script", "children":["User","label"]},
+      {"path":["script setup (TypeScript)","User"], "open":"interface User", "close":"}", "selection":"User", "children":[]},
+      {"path":["script setup (TypeScript)","label"], "open":"function label(", "close":"}", "selection":"label", "children":[], "foldAncestor":["script setup (TypeScript)"]}
+    ],
+    "regions": [
+      {"language":"typescript", "open":"<script setup lang=\"ts\">", "close":"</script>"},
+      {"language":"javascript", "open":"<script>", "close":"</script>"},
+      {"language":"scss", "open":"<style scoped lang=\"scss\">", "close":"</style>"},
+      {"language":"css", "open":"<style>", "close":"</style>"},
+      {"language":"typescript", "open":"{{", "close":"}}"}
+    ]
+  },
+  {
+    "file":"Profile.blade.php", "grammar":"blade",
+    "roots":["content"],
+    "nodes":[
+      {"path":["content"], "open":"@section('content')", "close":"@endsection", "selection":"'content'", "children":["x-card","greet","script (JavaScript)","style (CSS)"]},
+      {"path":["content","x-card"], "open":"<x-card>", "close":"</x-card>", "selection":"x-card", "children":["x-slot:title","p","p"]},
+      {"path":["content","x-card","x-slot:title"], "open":"<x-slot:title>", "close":"</x-slot:title>", "selection":"x-slot:title", "children":[], "foldAncestor":["content"]},
+      {"path":["content","greet"], "open":"function greet()", "close":"}", "selection":"greet", "children":[], "foldAncestor":["content"]},
+      {"path":["content","script (JavaScript)"], "open":"<script>", "close":"</script>", "selection":"script", "children":[]},
+      {"path":["content","style (CSS)"], "open":"<style>", "close":"</style>", "selection":"style", "children":[".hello"]}
+    ],
+    "regions":[
+      {"language":"javascript", "open":"<script>", "close":"</script>"},
+      {"language":"css", "open":"<style>", "close":"</style>"},
+      {"language":"php-only", "open":"const name = '{{", "close":"}}"},
+      {"language":"php-only", "open":"color: {{", "close":"}}"}
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+; Buntrail query revision 1. Deliberately predicate-free, exact grammar nodes.
+(attribute_name) @identifier
+(expression_tag) @tag
+(key_end) @identifier
+(key_start) @identifier
+(key_statement) @identifier
+(quoted_attribute_value) @string
+"as" @keyword
+"attach" @keyword
+"await" @keyword
+"catch" @keyword
+(comment) @comment
+"const" @keyword
+"debug" @keyword
+"doctype" @keyword
+"each" @keyword
+"else" @keyword
+"html" @keyword
+"if" @keyword
+"key" @keyword
+"render" @keyword
+"snippet" @keyword
+(tag_name) @tag
+"then" @keyword

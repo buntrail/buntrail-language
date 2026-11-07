@@ -1,0 +1,10 @@
+/* hello: parent selector and variable interpolation */
+$suffix: card;
+.root {
+  .#{$suffix} {
+    color: red;
+  }
+  &-#{$suffix} {
+    color: blue;
+  }
+}

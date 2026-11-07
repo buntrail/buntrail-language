@@ -1,0 +1,419 @@
+{
+  "runtime": "tree-sitter 0.27.1",
+  "queryVersion": "buntrail-1",
+  "predicates": [
+    "eq?",
+    "not-eq?",
+    "match?",
+    "not-match?",
+    "any-of?",
+    "not-any-of?"
+  ],
+  "directives": [],
+  "grammars": [
+    {
+      "name": "vue",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-vue",
+      "commit": "ce8011a414fdf8091f4e4071752efc376f4afb08",
+      "files": {
+        "LICENSE": "91ebb180e4e2e34628c45e405584d0faac6863660b69e8139da96290e58c14dd",
+        "grammar.js": "eb88df16c9170ef611835abc6fdec3f98a631077a9ca7a3b81e92d6c4c83969c",
+        "src/grammar.json": "a83f1d8208d5c0206fec0078cd62bc051b44d630f403f759a6236260f39dd604",
+        "src/node-types.json": "b3d99dde08e6cac5889224ce0243175d620ab6414775e58d8a4e7ad6ebb91141",
+        "src/parser.c": "770f6ec24e908a30adf26056cc20375d94e2918bc79c0bdff4331d1dbd5577ce",
+        "src/scanner.c": "9c2147fe2de1ede71f3ef5fd3ba54d12dbb6c2f71bce5735358fdbd4f8d19a32",
+        "src/tag.h": "b639821160ac0e1a70d1dc2fe206380da945bd65be7a010ffdb90694a0fef2b8",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
+        "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
+      },
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "svelte",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-svelte",
+      "commit": "ae5199db47757f785e43a14b332118a5474de1a2",
+      "files": {
+        "LICENSE": "0eea8dc45e89deeb03c7799bbbc7b4688f365fb274562f4540ecfebdea82e727",
+        "buntrail.patch": "3d91e3c6eca7b8ce049d531d710848ee812718270f73de8b88421a5e9df4da8c",
+        "grammar.js": "721b357ac1783cd06b2bd18516f3caac9a0db157c2b24789cba651d29acb2bbc",
+        "src/grammar.json": "06c8b47013c52f78e10e9799e4ad23837056c62551c79a37c9efb0f3680c1373",
+        "src/node-types.json": "0ad437713314b9dd9dd90b8289d2cc5a9ae9a0b0ff7d287e626f5dc75766ce7f",
+        "src/parser.c": "6920ded5074e445ed18b7cb0387faced58cc7af746b6871dec35da8822328567",
+        "src/scanner.c": "878988200a5e2c77cc822cc0a2c69f4fc593ba76a734a6a36b9370d7501b09ce",
+        "src/tag.h": "38d0f2356661128c2598660271ee9cd061ab50e7ca42b8275118f005899da47f",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "20e6ba85abb9d5b7e2e6dedf675c9424a057a06feee03aa3e2dd48a1cb4bf8a2",
+        "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
+      },
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "blade",
+      "repository": "https://github.com/EmranMR/tree-sitter-blade",
+      "commit": "b5291d1ba207a8ebb8383b2ecb8a8a6535210a50",
+      "files": {
+        "LICENSE": "96e0c1803ffb831c7287b1fb7f88567d05e58d37da553e6bb9a9c4a765434ecb",
+        "buntrail.patch": "718aecd9b51c310bd84623c6684a9580127a902e463703ea24811f44dca0f8cd",
+        "grammar.js": "8061cb402eb04fcbe135cf81d51db19a837137fdedbf4cf712121365c63e2c76",
+        "src/grammar.json": "dfd511c1d7724105d195cf452eb1d5369edbe342210245ecccc42491b774c4b3",
+        "src/node-types.json": "57a93280c69a44ab9bb942b2c48cdac2887f953f580261cacf60da1e9089b55b",
+        "src/parser.c": "3c703ede0355682bb089efc2e8c775ad69a72a8afd67acebc1326090aae012a8",
+        "src/scanner.c": "2dc53c3542ac31f0b66b1bdf817c6674e62a94fdf6868577c499f8fb0c3a4b8c",
+        "src/tag.h": "e52b42ef21d27c7a6b3a863e846bfee6c17e30904a3fd813f64c304b6b39b8f0",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "20e6ba85abb9d5b7e2e6dedf675c9424a057a06feee03aa3e2dd48a1cb4bf8a2",
+        "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
+      },
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "dockerfile",
+      "repository": "https://github.com/camdencheek/tree-sitter-dockerfile",
+      "commit": "971acdd908568b4531b0ba28a445bf0bb720aba5",
+      "files": {
+        "LICENSE": "806b8fcd19c1cdf23e178eb25942acc844a38669e36b2c896c7baf5f8bcecbb4",
+        "buntrail.patch": "3a4a423a57794ef905142ef8d4fda48994e5a3e8c61e41ad5d4d3662c12a53b7",
+        "grammar.js": "9b1d516b80fd3261757eddaa2d8e99e628643937232af93a1ea576911aa1e960",
+        "src/grammar.json": "c7248d23cd9f143958eb25829a7447a864bf7751791ca56660354b04513b4ac8",
+        "src/node-types.json": "1a68d713a6d8f3ff10e25a674f7b5eb8083cd1851da64e4cd7bb73bd585e9497",
+        "src/parser.c": "4265eb2433dd67d270e4a901312d7050f686e6a45dca9e7879fdd2d49e7ed501",
+        "src/scanner.c": "5ba86158cb5ef00201290c852fa2c4869a510a30788b4215c891cdd6a910fdcc",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
+        "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
+      },
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "jsonc",
+      "repository": "https://github.com/tree-sitter/tree-sitter-json",
+      "commit": "ee35a6ebefcef0c5c416c0d1ccec7370cfca5a24",
+      "files": {
+        "LICENSE": "2e0110e07abef7c2548b26ec9d6969775617ca539a0dc8dbeeb14d6452c711d1",
+        "buntrail.patch": "de415f830d174b0a75a48e8ebbd1ab0e3987fa06752b121cda7d04369764fe0f",
+        "grammar.js": "e918a11833c94a430618e38be0915aa08d4ef179fdf54ea0b804109fa1c9ae4c",
+        "src/grammar.json": "1493b41ade2c6335cd9e599688b7b3d4cef9430ce071fe265769f12da9f1f481",
+        "src/node-types.json": "48689e9f2cb4d854b4f6068350800c15c89ab04db1f227830230d29ab88cb596",
+        "src/parser.c": "b106a0d3b19d866f69c972ea8cd9a1bacee25b241121e94f27dafd54340d6f2f",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "20e6ba85abb9d5b7e2e6dedf675c9424a057a06feee03aa3e2dd48a1cb4bf8a2",
+        "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
+      },
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "scss",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-scss",
+      "commit": "8f47fa8be72ac299cab4c6aa02668635f2dcd4be",
+      "files": {
+        "LICENSE": "0eea8dc45e89deeb03c7799bbbc7b4688f365fb274562f4540ecfebdea82e727",
+        "grammar.js": "f05f385b02fe353818e180ac4620f7a88f382f19ef801ddca29f1759e33680c4",
+        "src/grammar.json": "cac3446a268374e6f05efb81b08828f2e69693c514363eea05c4a4343865e49f",
+        "src/node-types.json": "5248692e61c13f8359a5567dfbb20949f7d26249004c365184260c4416e0362a",
+        "src/parser.c": "12b4480b82219537b11decf05e97fa8bb31c3923017521b8218bd137c6ce6cbc",
+        "src/scanner.c": "161546c39369051c9cb6bfa374d62be90aaaa8c673bca68c4a06b2524706e7db",
+        "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
+        "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
+        "src/tree_sitter/parser.h": "5a51af1cca99044757923e22ae1f8597dd7a2c7313248b40cfb6947a9fdf3e55"
+      },
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "dockerfile_tick",
+      "repository": "https://github.com/camdencheek/tree-sitter-dockerfile",
+      "commit": "971acdd908568b4531b0ba28a445bf0bb720aba5",
+      "files": {
+        "LICENSE": "806b8fcd19c1cdf23e178eb25942acc844a38669e36b2c896c7baf5f8bcecbb4",
+        "buntrail.patch": "4ce5032727140ca2be83098b10c087c77396d61e31b20a13dd1873dcc8f82d84",
+        "grammar.js": "32def4a25f38aadf77241ced24df597e44cd0fce011e39120ddb8f1dd0a1d96c",
+        "src/grammar.json": "d1161c703e8c3d1510ac7f03c01ebd406a1058e0c0fd0bab22b02effc25ce288",
+        "src/node-types.json": "c89a93251f6ffc2c174218f41b5e3f7eb781405651c0c77a3e224fe150751c57",
+        "src/parser.c": "ebe38b04cefa17b2b60266a24efbeed02c467ed670657b0fb2d3ffd2ef5b0d20",
+        "src/scanner.c": "6030184be8e3812ab0a1b3164c6c4630ba795d93893f78e9facb75ff99396a6b",
+        "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+        "src/tree_sitter/array.h": "20e6ba85abb9d5b7e2e6dedf675c9424a057a06feee03aa3e2dd48a1cb4bf8a2",
+        "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
+      },
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "html",
+      "crate": "tree-sitter-html-0.23.2",
+      "commit": "5a5ca8551a179998360b4a4ca2c0f366a35acc03",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-html",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "javascript",
+      "crate": "tree-sitter-javascript-0.25.0",
+      "commit": "44c892e0be055ac465d5eeddae6d3e194424e7de",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-javascript",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "typescript",
+      "crate": "tree-sitter-typescript-0.23.2",
+      "commit": "f975a621f4e7f532fe322e13c4f79495e0a7b2e7",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-typescript",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "php",
+      "crate": "tree-sitter-php-0.25.1",
+      "commit": "58d5643086ae60e93a3746cca648363ee97c8761",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-php",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "java",
+      "crate": "tree-sitter-java-0.23.5",
+      "commit": "94703d5a6bed02b98e438d7cad1136c01a60ba2c",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-java",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "swift",
+      "crate": "tree-sitter-swift-0.7.4",
+      "commit": "171fa3bc343233fe07f5e17205aaada33d778825",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/alex-pinkus/tree-sitter-swift",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "c",
+      "crate": "tree-sitter-c-0.24.2",
+      "commit": "b780e47fc780ddc8da13afa35a3f4ed5c157823d",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-c",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "cpp",
+      "crate": "tree-sitter-cpp-0.23.4",
+      "commit": "f41e1a044c8a84ea9fa8577fdd2eab92ec96de02",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-cpp",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "go",
+      "crate": "tree-sitter-go-0.25.0",
+      "commit": "1547678a9da59885853f5f5cc8a99cc203fa2e2c",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-go",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "dart",
+      "crate": "tree-sitter-dart-0.3.0",
+      "commit": "4928e18ce0c6a11ebd2bfb9db3766c70b17ad4dc",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/nielsenko/tree-sitter-dart",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "xml",
+      "crate": "tree-sitter-xml-0.7.0",
+      "commit": "4b64dd3a03ec002258d6268d712fd93716d6ab57",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-xml",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "md",
+      "crate": "tree-sitter-md-0.5.4",
+      "commit": "41ff24a6c775492c543b09228aeb98d1cd2b3a0f",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-markdown",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "yaml",
+      "crate": "tree-sitter-yaml-0.7.2",
+      "commit": "7708026449bed86239b1cd5bce6e3c34dbca6415",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-yaml",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "json",
+      "crate": "tree-sitter-json-0.24.8",
+      "commit": "ee35a6ebefcef0c5c416c0d1ccec7370cfca5a24",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-json",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "toml-ng",
+      "crate": "tree-sitter-toml-ng-0.7.0",
+      "commit": "64b56832c2cffe41758f28e05c756a3a98d16f41",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-toml",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        14
+      ]
+    },
+    {
+      "name": "css",
+      "crate": "tree-sitter-css-0.25.0",
+      "commit": "dda5cfc5722c429eaba1c910ca32c2c0c5bb1a3f",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-css",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    },
+    {
+      "name": "bash",
+      "crate": "tree-sitter-bash-0.25.1",
+      "commit": "a06c2e4415e9bc0346c6b86d401879ffb44058f7",
+      "source": "Cargo.lock checksum + source-built crate",
+      "license": "MIT",
+      "query": "buntrail-1",
+      "repository": "https://github.com/tree-sitter/tree-sitter-bash",
+      "noticeDirectory": "docs/reference/licenses/t02",
+      "parserABI": [
+        15
+      ]
+    }
+  ],
+  "queries": {
+    "swift.scm": "f18bdea8d9e8dbd76176f7c19b91b750742f5c981174eca358182a2fa951e29d",
+    "html.scm": "1d57b5958f91c5f7dd808a2bcd417e633baeec58e8afb0bae2728c88c87e8a05",
+    "yaml.scm": "d5e1d0c04a77a0609e7f3b3553e4d2ff71f38dded4b17e65e8cec092dd143e73",
+    "jsonc.scm": "332708e1876c6a3d595518f4feee19304adad69a12e0a2274196246f00f85160",
+    "jsx.scm": "52f4ab6e2ae1bef8b729a5471ba1ce16e672352463df05c5d075f3b1b6d08196",
+    "go.scm": "d24c7cc28e61f7de8e5786a8a9755e708ed100a2c537976ccf4718d2035de95e",
+    "php-only.scm": "b757c76e01b1d559d180e34a7e5d35990a53bcbc14f876032b0fa5e98e2e8b11",
+    "blade.scm": "751c29ba7bd40a5f05d1131687d01486039d077a3890a26917b36d4a2e1f967a",
+    "svelte.scm": "1954b75a8181ab4a99ba672a148bcc14dc5033492b11527f336c55cb3273e79b",
+    "dart.scm": "aed8f0358c13973f71c27e0bc41a6e026e0065306b3762382feb1c330864895b",
+    "tsx.scm": "8700cf1d9054922a6b5fc9e8f5c29df067fc9a9019f411ef8d6c80a7151965ec",
+    "markdown-inline.scm": "a0558427b9a907c4383a598847199eba5a661172b7a49258ab24a878ce9923ff",
+    "c.scm": "13408b4aee2df2df192eaaa8a8d48ec2b5885fc0fab293e17eb5a46ac6682cce",
+    "toml.scm": "3e0a609c3a6138adff6395a5adc0a0ad3e256f48100969a78484c6900e0d9018",
+    "css.scm": "0eed57340eafe2e8bdec77aad4d1cd47e60f798742278081e9d0fc42f7ba0f10",
+    "php.scm": "b757c76e01b1d559d180e34a7e5d35990a53bcbc14f876032b0fa5e98e2e8b11",
+    "typescript.scm": "8700cf1d9054922a6b5fc9e8f5c29df067fc9a9019f411ef8d6c80a7151965ec",
+    "cpp.scm": "d2c07153cd18a95779b2653313405432b68afc76bb6787381a62cd7d5901206e",
+    "shell.scm": "a5508da9bb92c30059133b8a607cd28c52826c3ac34305cbe2ea2c548a44628e",
+    "json.scm": "332708e1876c6a3d595518f4feee19304adad69a12e0a2274196246f00f85160",
+    "dockerfile_tick.scm": "a85e8c1051ea525b42a96c8772df8e606b03279db8b4fe2e4673d38d7f28f800",
+    "markdown.scm": "05870f31748fed0cc96a863bba0c5027e4e84509fc492e39ce34f8ca8fbc4034",
+    "javascript.scm": "52f4ab6e2ae1bef8b729a5471ba1ce16e672352463df05c5d075f3b1b6d08196",
+    "xml.scm": "0414f4ca49d72f0fad19bbf8ed9dabdc46da0e8c3a3e89e40fce00e2466d6ff6",
+    "vue.scm": "1d57b5958f91c5f7dd808a2bcd417e633baeec58e8afb0bae2728c88c87e8a05",
+    "dockerfile.scm": "a85e8c1051ea525b42a96c8772df8e606b03279db8b4fe2e4673d38d7f28f800",
+    "scss.scm": "f3e0bd37f69d8be4b136c6f313a91d08793984ae5ab7b40d28f70fb3b285af1a",
+    "java.scm": "ef0590aef43972f227ec203ace9477dc00e254dbaad2138dcd0f056e9ae57b36"
+  },
+  "predicatePolicy": "Shipped app queries are predicate-free. Listed text predicates are handled by the Tree-sitter Rust QueryCursor; unknown predicates/directives are not shipped.",
+  "injectionAliases": {
+    "js": "javascript",
+    "ts": "typescript",
+    "bash": "shell",
+    "sh": "shell",
+    "zsh": "shell",
+    "yml": "yaml",
+    "md": "markdown",
+    "c++": "cpp",
+    "cxx": "cpp"
+  },
+  "markdownExtensions": "Upstream tree-sitter-md 0.5.4 default generated grammars, block + inline. No runtime preprocessor."
+}

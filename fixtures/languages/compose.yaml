@@ -1,0 +1,19 @@
+x-env: &env
+  MODE: hello
+services:
+  app:
+    environment:
+      <<: *env
+      MODE: hello
+      HOST: ${HOST:-localhost}
+    command: [echo, hello]
+    ports:
+      - target: 8080
+        published: 80
+      - "443:443"
+    description: |
+      hello
+      world
+    folded: >
+      hello
+      next

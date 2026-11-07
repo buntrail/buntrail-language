@@ -1,0 +1,7 @@
+# escape=`
+FROM alpine AS hello
+RUN echo hello `
+ && true
+COPY <<EOFCONTENT /message
+hello
+EOFCONTENT
