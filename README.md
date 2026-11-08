@@ -12,7 +12,7 @@ Add to your Cargo.toml after the initial registry release:
 
 ```toml
 [dependencies]
-buntrail-language = "0.1.0"
+buntrail-language = "0.2.0"
 ```
 
 ```rust
