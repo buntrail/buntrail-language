@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+File-sidebar operations and compatible shared core contracts. C ABI remains version 1.
+
 ## 0.2.0 — Git Repository
 
 Use core 0.2 contracts without changing language analysis behavior.
