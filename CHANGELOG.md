@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 — Git sidebar
+
+Update the shared core dependency; language behavior is unchanged.
+
 ## 0.3.0
 
 File-sidebar operations and compatible shared core contracts. C ABI remains version 1.
